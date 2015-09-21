@@ -2,14 +2,27 @@ body {
   padding-top: 70px;
 }
 
-.navbar-default {
+#profilePic {
+  width: 25%;
+  height: 25%;
+}
+
+h1 {
+  padding-top: 0px;
+}
+
+.navbar-default, #footer {
   background-color: #34495e;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, #footer .navbar-brand {
   color: #ecf0f1;
 }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:focus, #footer .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, #footer .navbar-nav > li > a:hover {
+  color: #ecf0f1;
+}
+
+#footer {
   color: #ecf0f1;
 }

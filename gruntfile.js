@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		watch : {
 			css: {
 				files: ['src/scss/main.scss'],
-				tasks: ['sass:dev']
+				tasks: ['sass:dev', 'browserSync:dev']
 			},
 		},
 		sass: {
@@ -26,11 +26,23 @@ module.exports = function(grunt) {
 				}
 			},
 		},
+		browserSync: {
+		    dev: {
+		        bsFiles: {
+		            src : 'dist/css/style.css'
+		        },
+		        options: {
+		        	watchTask: true,
+		            browser: "firefox",		            
+        }
+    }
+}
 	});
 
 	//Load the plugins
 	grunt.loadNpmTasks ('grunt-contrib-watch' );
 	grunt.loadNpmTasks ('grunt-sass' );
+	grunt.loadNpmTasks ('grunt-browser-sync')
 
 	//Register task(s).
 	grunt.registerTask('default', ['sass:dev']);
