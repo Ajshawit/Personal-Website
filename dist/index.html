@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
- 	<meta charset="UTF-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
+		<nav class="navbar navbar-default">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -31,21 +31,41 @@
 					</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
 				</nav>
-			</div>
-		</nav>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-1">
-			<h1>Hello World</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsum sint facilis molestias nisi obcaecati eius aspernatur, vitae amet excepturi saepe quaerat voluptas quidem laborum. Fugiat sit fugit consequuntur officia.</p>
-		</div>
-		<div class="col-md-4">
-			<img id="profilePic" src="img/profile-placeholder.gif" alt="Profile Picture">
-		</div>
-	</div>
-	<div class="row" id="footer">
-		<div class="col-md-12">
-			<p>Footers</p>
-		</div>
-	</div>
-</body>
-</html>
+				<div class="container-fluid">
+					<div id="homeBody">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<h1 class="text-center">Giant words!</h1>
+								<h2 class="text-center">Not so giant words but still a little giant</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid" id="colSection">
+					<div class="container">
+						<div class="row" id="portfolio">
+							<div class="col-md-4">
+								<a href="https://github.com/Ajshawit/ajshawit.github.io"><img src="img/ajshaw.net.png" alt="This website!"></a>
+								<h1>This Website!</h1>
+								<p>This website was made using bootstrap and...well that's it really. Bootstrap and with the help of Sass and grunt I made this website. Source is avalible on github <a href="https://github.com/Ajshawit/ajshawit.github.io">here</a> if you're interested.</p>
+							</div>
+							<div class="col-md-4">
+								<a href="http://www.streeterlaw.com.au/new-enquiry/Web-to-Lead.html"><img src="img/NewEnquiryForm.png" alt="New Enquiry form for Streeterlaw"></a>
+								<h1>Web form</h1>
+								<p>This webform was created using bootstrap and jquery. It points to a business catalyst CRM which keeps a record of the enquiry, this is used for all leads that come via the phone to be then be assigned to someone to chase up once the lead is qualified.</p>
+							</div>
+							<div class="col-md-4">
+								<a href="https://google.com.au"><img src="img/google.png" alt="Google.com"></a>
+								<h1>Google</h1>
+								<p>This is filler until I have something else to add.</p>
+							</div>
+						</div>
+						<div class="row">
+							<footer>
+								<p class="text-center">Aj Shaw 2015 &copy;</p>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</body>
+		</html>

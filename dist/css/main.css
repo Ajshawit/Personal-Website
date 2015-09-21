@@ -1,28 +1,93 @@
+html {
+  background-color: #ecf0f1;
+}
+
 body {
-  padding-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f39c12;
 }
 
-#profilePic {
-  width: 25%;
-  height: 25%;
-}
-
-h1 {
-  padding-top: 0px;
-}
-
-.navbar-default, #footer {
-  background-color: #34495e;
-}
-
-.navbar-default .navbar-brand, #footer .navbar-brand {
+.container-fluid, .navbar .navbar-default .navbar-fixed-top {
+  background-color: #f39c12;
   color: #ecf0f1;
 }
 
-.navbar-default .navbar-nav > li > a:focus, #footer .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, #footer .navbar-nav > li > a:hover {
+.container-fluid h1, .navbar .navbar-default .navbar-fixed-top h1 {
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 25px;
+}
+
+.container {
+  /** I don't like this, it's a little 'hacky' **/
+  width: 1300px;
+}
+
+#homeBody h1 {
+  font-size: 5em;
+}
+
+#homeBody h2 {
+  font-size: 2.5em;
+  padding-bottom: 50px;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar a {
+  margin-top: 40px;
+}
+
+.navbar li:active {
+  border-radius: 5px;
+}
+
+.navbar-default {
+  background-color: #f39c12;
+}
+
+.navbar-default .navbar-brand {
   color: #ecf0f1;
 }
 
-#footer {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #ecf0f1;
+}
+
+#colSection {
+  background-color: #ecf0f1;
+  color: black;
+}
+
+#colSection p {
+  margin-top: 20px;
+}
+
+#colSection h1 {
+  margin-top: 0px;
+  font-size: 1.5em;
+}
+
+#portfolio img {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 1px;
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+}
+
+footer {
+  color: #95a5a6;
+  background-color: #ecf0f1;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 10px;
 }

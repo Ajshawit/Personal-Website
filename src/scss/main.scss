@@ -1,31 +1,97 @@
 @import 'variables';
 
+html {
+	background-color: $content-bg-color;
+}
+
 body {
-	padding-top:70px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: $bg-color
 }
 
-#profilePic {
-	width: 25%;
-	height: 25%;
+.navbar .navbar-default .navbar-fixed-top {
+	@extend .container-fluid;
 }
 
-h1 {
-	padding-top: 0px;
+.container-fluid {
+	background-color: $bg-color;
+	color: $font-color;
+	h1 {
+	font-family: 'Press Start 2P', cursive;
+	padding-top: 25px
+	}
+}
+
+.container {
+	/** I don't like this, it's a little 'hacky' **/
+	width: 1300px;
+}
+
+#homeBody {
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		font-size: 2.5em;
+		padding-bottom: 50px;
+	}
+}
+
+.navbar {
+	border: none;
+	a {
+		margin-top: 40px;
+	}
+	li:active {
+		border-radius: 5px;
+	}
 }
 
 .navbar-default {
-	background-color: $header-footer-bg-colors;
+	background-color: $bg-color;
 }
 
 .navbar-default .navbar-brand {
-	color: $header-footer-font-colors;
+	color: $font-color;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-	color: $header-footer-font-colors;
+	color: $font-color;
 }
 
-#footer {
-	@extend .navbar-default;
-	color: $header-footer-font-colors;
+#colSection {
+	background-color: $content-bg-color;
+	color: black;
+	p {
+		margin-top: 20px
+	}
+	h1 {
+		margin-top: 0px;
+		font-size: 1.5em;
+	}
+}
+
+#portfolio {
+	img {
+		border-style: solid;
+		border-radius: 5px;
+		border-color: black;
+		border-width: 1px;
+		width: 350px;
+		height: 350px;
+		margin-top: 40px;
+	}
+}
+
+footer {
+	color: #95a5a6;
+	background-color: $content-bg-color;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 10px;
 }
