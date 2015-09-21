@@ -4,11 +4,11 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f39c12;
+  background-color: #40d47e;
 }
 
 .container-fluid, .navbar .navbar-default .navbar-fixed-top {
-  background-color: #f39c12;
+  background-color: #40d47e;
   color: #ecf0f1;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #f39c12;
+  background-color: #40d47e;
 }
 
 .navbar-default .navbar-brand {
