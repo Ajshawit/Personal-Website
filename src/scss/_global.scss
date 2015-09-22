@@ -1,0 +1,82 @@
+//Global
+
+html {
+	background-color: $content-bg-color;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $bg-color
+}
+
+.container-fluid {
+	background-color: $bg-color;
+	color: $font-color;
+	h1 {
+	font-family: 'Press Start 2P', cursive;
+	padding-top: 25px
+	}
+}
+
+//NavBar
+
+.navbar .navbar-default .navbar-fixed-top {
+	@extend .container-fluid;
+}
+
+.nav .navbar-nav .navbar-right {
+	color: $font-color;
+}
+
+.container {
+	/** I don't like this, it's a little 'hacky' **/
+	width: 1300px;
+}
+
+#homeBody {
+	h1 {
+		font-size: 5em;
+	}
+	h2 {
+		font-size: 2.5em;
+		padding-bottom: 50px;
+	}
+}
+
+.navbar {
+	border: none;
+	li:active {
+		border-radius: 5px;
+	}
+}
+
+.navbar-default {
+	background-color: $bg-color;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+	color: $font-color
+}
+
+.navbar-default .navbar-nav > .active > a {
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+	background-color: $content-bg-color;
+}
+
+button.navbar-toggle.collapsed {
+	color: $font-color;
+}
+
+//Footer
+
+footer {
+	color: #95a5a6;
+	background-color: $content-bg-color;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
