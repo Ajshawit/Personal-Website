@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-	/** I don't like this, it's a little 'hacky' **/
+	// I don't like this, it's a little 'hacky'
 	width: 1300px;
 }
 
@@ -64,18 +64,31 @@ body {
 	border-radius: 10px;
 }
 
-.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-	background-color: $content-bg-color;
-}
+//Mobile Optimisation
 
-button.navbar-toggle.collapsed {
-	color: $font-color;
+@media screen and (max-width: 768px) {
+	.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+		background-color: $content-bg-color;		
+	}
+	.navbar-default .navbar-nav > li > a, {
+		color: $alt-font-color;
+		text-align: right;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: $font-color
+	}
+	.navbar-default .navbar-toggle {
+		border-style: none;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: $bg-color
+	}
 }
 
 //Footer
 
 footer {
-	color: #95a5a6;
+	color: $footer-color;
 	background-color: $content-bg-color;
 	padding-top: 50px;
 	padding-bottom: 10px;

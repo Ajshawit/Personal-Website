@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-  /** I don't like this, it's a little 'hacky' **/
   width: 1300px;
 }
 
@@ -57,12 +56,23 @@ body {
   border-radius: 10px;
 }
 
-.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-  background-color: #ecf0f1;
-}
-
-button.navbar-toggle.collapsed {
-  color: #ecf0f1;
+@media screen and (max-width: 768px) {
+  .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    background-color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #34495e;
+    text-align: right;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+  }
+  .navbar-default .navbar-toggle {
+    border-style: none;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #40d47e;
+  }
 }
 
 footer {
@@ -74,7 +84,7 @@ footer {
 
 #colSection {
   background-color: #ecf0f1;
-  color: black;
+  color: #34495e;
 }
 
 #colSection p {
