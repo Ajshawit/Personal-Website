@@ -11,7 +11,8 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
-			<div class="container">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -22,52 +23,53 @@
 					<a class="navbar-brand" href="#">AjShaw.net</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About me</a></li>
 						<li><a href="#">Blog</a></li>
-						<li><a href="#">About Me</a></li>
 					</ul>
-					</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-				<div class="container-fluid">
-					<div id="homeBody">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2">
-								<h1 class="text-center">Giant words!</h1>
-								<h2 class="text-center">Not so giant words but still a little giant</h2>
-							</div>
-						</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="container-fluid">
+			<div id="homeBody">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center">Giant words!</h1>
+						<h2 class="text-center">Not so giant words but still a little giant</h2>
 					</div>
 				</div>
-				<div class="container-fluid" id="colSection">
-					<div class="container">
-						<div class="row" id="portfolio">
-							<div class="col-md-4">
-								<a href="https://github.com/Ajshawit/ajshawit.github.io"><img src="img/ajshaw.net.png" alt="This website!"></a>
-								<h1>This Website!</h1>
-								<p>This website was made using bootstrap and...well that's it really. Bootstrap and with the help of Sass and grunt I made this website. Source is avalible on github <a href="https://github.com/Ajshawit/ajshawit.github.io">here</a> if you're interested.</p>
-							</div>
-							<div class="col-md-4">
-								<a href="#"><img src="img/NewEnquiryForm.png" alt="New Enquiry form for Law Firm"></a>
-								<h1>Web form</h1>
-								<p>This webform was created using bootstrap and jquery. It points to a business catalyst CRM which keeps a record of the enquiry, this is used for all leads that come via the phone to be then be assigned to someone to chase up once the lead is qualified.
-								For security this is just a duplication with slight mods.
-								</p>
-							</div>
-							<div class="col-md-4">
-								<a href="https://google.com.au"><img src="img/google.png" alt="Google.com"></a>
-								<h1>Google</h1>
-								<p>This is filler until I have something else to add.</p>
-							</div>
-						</div>
-						<div class="row">
-							<footer>
-								<p class="text-center">Aj Shaw 2015 &copy;</p>
-							</footer>
-						</div>
-					</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="colSection">
+			<div class="row" id="portfolio">
+				<div class="col-md-4">
+					<a href="https://github.com/Ajshawit/ajshawit.github.io"><img src="img/ajshaw.net.png" alt="This website!"></a>
+					<h1>This Website!</h1>
+					<p>This website was made using bootstrap and...well that's it really. Bootstrap and with the help of Sass and grunt this website was born. Source is avalible on github <a href="https://github.com/Ajshawit/ajshawit.github.io">here</a> if you're interested.</p>
 				</div>
-			</body>
-		</html>
+				<div class="col-md-4">
+					<a href="#"><img src="img/NewEnquiryForm.png" alt="New Enquiry form for Law Firm"></a>
+					<h1>Web form</h1>
+					<p>This webform was created using bootstrap and jquery. It points to a business catalyst CRM which keeps a record of the enquiry, this is used for all leads that come via the phone to be then be assigned to someone to chase up once the lead is qualified.
+						For security this is just a duplication with slight mods.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<a href="https://google.com.au"><img src="img/google.png" alt="Google.com"></a>
+					<h1>Google</h1>
+					<p>This is filler until I have something else to add.</p>
+				</div>
+			</div>
+			<div class="row">
+				<footer>
+					<p class="text-center">Aj Shaw 2015 &copy;</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
