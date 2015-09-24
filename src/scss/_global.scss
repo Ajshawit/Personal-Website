@@ -1,68 +1,31 @@
 //Global
 
-html {
-	background-color: $content-bg-color;
-}
-
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: $bg-color
-}
-
-.container-fluid {
-	background-color: $bg-color;
-	color: $font-color;
-	h1 {
-	font-family: 'Press Start 2P', cursive;
-	padding-top: 25px
-	}
 }
 
 //NavBar
 
-.navbar .navbar-default .navbar-fixed-top {
-	@extend .container-fluid;
-}
-
-.nav .navbar-nav .navbar-right {
-	color: $font-color;
-}
-
-.container {
-	// I don't like this, it's a little 'hacky'
-	width: 1300px;
-}
-
-#homeBody {
-	h1 {
-		font-size: 5em;
+#nav {
+	.navbar {
+		border: none;
+		li:active {;
+			border-radius: 5px;
+		}
 	}
-	h2 {
-		font-size: 2.5em;
-		padding-bottom: 50px;
+	.navbar-default {
+		background-color: $homeAndNav-bg-color;;
+	}
+	.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+		color: $homeAndNav-font-color;
+	}
+	.navbar-default .navbar-nav > .active > a {
+		border-style: solid;
+		border-width: 0px;
+		border-radius: 10px;
 	}
 }
 
-.navbar {
-	border: none;
-	li:active {
-		border-radius: 5px;
-	}
-}
-
-.navbar-default {
-	background-color: $bg-color;
-}
-
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
-	color: $font-color
-}
-
-.navbar-default .navbar-nav > .active > a {
-	border-style: solid;
-	border-width: 0px;
-	border-radius: 10px;
-}
 
 //Mobile Optimisation
 
@@ -75,13 +38,13 @@ body {
 		text-align: right;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
-		background-color: $font-color
+		background-color: $homeAndNav-font-color;
 	}
 	.navbar-default .navbar-toggle {
 		border-style: none;
 	}
 	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-		background-color: $bg-color
+		background-color: $homeAndNav-bg-color;
 	}
 }
 
