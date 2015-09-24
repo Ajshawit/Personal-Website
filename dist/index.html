@@ -10,32 +10,36 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
+		<div id="nav">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">AjShaw.net</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#aboutMe">About me</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#blog">Blog</a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+		<!-- Start Home -->
+		<div id="home">
 			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">AjShaw.net</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About me</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
-		<div class="container-fluid">
-			<div id="homeBody">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
 						<h1 class="text-center">Giant words!</h1>
@@ -44,30 +48,84 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid" id="colSection">
-			<div class="row" id="portfolio">
-				<div class="col-md-4">
-					<a href="https://github.com/Ajshawit/ajshawit.github.io"><img src="img/ajshaw.net.png" alt="This website!"></a>
-					<h1>This Website!</h1>
-					<p>This website was made using bootstrap and...well that's it really. Bootstrap and with the help of Sass and grunt this website was born. Source is avalible on github <a href="https://github.com/Ajshawit/ajshawit.github.io">here</a> if you're interested.</p>
+		<!-- End Home-->
+		<!-- Start aboutMe-->
+		<div id="aboutMe">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<h1 class="text-center">Who am I?</h1>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<a href="#"><img src="img/NewEnquiryForm.png" alt="New Enquiry form for Law Firm"></a>
-					<h1>Web form</h1>
-					<p>This webform was created using bootstrap and jquery. It points to a business catalyst CRM which keeps a record of the enquiry, this is used for all leads that come via the phone to be then be assigned to someone to chase up once the lead is qualified.
-						For security this is just a duplication with slight mods.
-					</p>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-2">
+						<p>I am a hobbyist front end web developer looking to make my passion for front end web technologies a career.</p>
+					</div>
+					<div class="col-md-2">
+						
+					</div>
 				</div>
-				<div class="col-md-4">
-					<a href="https://google.com.au"><img src="img/google.png" alt="Google.com"></a>
-					<h1>Google</h1>
-					<p>This is filler until I have something else to add.</p>
+				
+				<div class="row">
+					<div class="col-md-1 col-md-offset-2">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>jQuery</li>
+							<li>Boostrap</li>
+						</ul>
+					</div>
+					<div class="col-md-7">
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+								80%
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+								50%
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+								20%
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+								70%
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<footer>
-					<p class="text-center">Aj Shaw 2015 &copy;</p>
-				</footer>
+		</div>
+		<div id="portfolio">
+			<div class="container-fluid" id="colSection">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="https://github.com/Ajshawit/ajshawit.github.io"><img class="text-center" src="img/ajshaw.net.png" alt="This website!"></a>
+						<h1>This Website!</h1>
+						<p>This website was made using bootstrap and...well that's it really. Bootstrap and with the help of Sass and grunt this website was born. Source is avalible on github <a href="https://github.com/Ajshawit/ajshawit.github.io">here</a> if you're interested.</p>
+					</div>
+					<div class="col-md-4">
+						<a href="#"><img class="text-center" src="img/NewEnquiryForm.png" alt="New Enquiry form for Law Firm"></a>
+						<h1>Web form</h1>
+						<p>This webform was created using bootstrap and jquery. It points to a business catalyst CRM which keeps a record of the enquiry, this is used for all leads that come via the phone to be then be assigned to someone to chase up once the lead is qualified.
+							For security this is just a duplication with slight mods.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<a href="https://google.com.au"><img class="text-center" src="img/google.png" alt="Google.com"></a>
+						<h1>Google</h1>
+						<p>This is filler until I have something else to add.</p>
+					</div>
+				</div>
+				<div class="row">
+					<footer>
+						<p class="text-center">Aj Shaw 2015 &copy;</p>
+					</footer>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,56 +1,24 @@
-html {
-  background-color: #ecf0f1;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #40d47e;
 }
 
-.container-fluid, .navbar .navbar-default .navbar-fixed-top {
-  background-color: #40d47e;
-  color: #ecf0f1;
-}
-
-.container-fluid h1, .navbar .navbar-default .navbar-fixed-top h1 {
-  font-family: 'Press Start 2P', cursive;
-  padding-top: 25px;
-}
-
-.nav .navbar-nav .navbar-right {
-  color: #ecf0f1;
-}
-
-.container {
-  width: 1300px;
-}
-
-#homeBody h1 {
-  font-size: 5em;
-}
-
-#homeBody h2 {
-  font-size: 2.5em;
-  padding-bottom: 50px;
-}
-
-.navbar {
+#nav .navbar {
   border: none;
 }
 
-.navbar li:active {
+#nav .navbar li:active {
   border-radius: 5px;
 }
 
-.navbar-default {
+#nav .navbar-default {
   background-color: #40d47e;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+#nav .navbar-default .navbar-nav > li > a, #nav .navbar-default .navbar-brand {
   color: #ecf0f1;
 }
 
-.navbar-default .navbar-nav > .active > a {
+#nav .navbar-default .navbar-nav > .active > a {
   border-style: solid;
   border-width: 0px;
   border-radius: 10px;
@@ -82,6 +50,32 @@ footer {
   padding-bottom: 10px;
 }
 
+#home {
+  background-color: #40d47e;
+  color: #ecf0f1;
+}
+
+#home h1 {
+  font-size: 5em;
+  padding-top: 65px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#home h2 {
+  font-size: 2.5em;
+  padding-bottom: 50px;
+}
+
+#aboutMe {
+  background-color: #ecf0f1;
+}
+
+#aboutMe ul li {
+  height: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
 #colSection {
   background-color: #ecf0f1;
   color: #34495e;
@@ -99,7 +93,7 @@ footer {
 #portfolio img {
   border-style: solid;
   border-radius: 5px;
-  border-color: black;
+  border-color: #34495e;
   border-width: 1px;
   width: 350px;
   height: 350px;
