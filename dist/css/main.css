@@ -18,10 +18,6 @@ body {
   border-radius: 10px;
 }
 
-.greenNav .navbar-default, .greenNav .navbar-header {
-  background-color: #2CC990;
-}
-
 .greenNav .navbar-default .navbar-toggle .icon-bar, .greenNav .icon-bar {
   background-color: #ecf0f1;
 }
@@ -30,7 +26,7 @@ body {
   border-style: none;
 }
 
-.greenNav .navbar-default .navbar-toggle:focus, .greenNav .navbar-default .navbar-toggle:hover, .greenNav .navbar-collapse.collapse.in, .greenNav .navbar-collapse.collapsing {
+.greenNav .navbar-default, .greenNav .navbar-header, .greenNav .navbar-default .navbar-toggle:focus, .greenNav .navbar-default .navbar-toggle:hover, .greenNav .navbar-collapse.collapse.in, .greenNav .navbar-collapse.collapsing {
   background-color: #2CC990;
 }
 
@@ -43,10 +39,6 @@ body {
   color: #ecf0f1;
 }
 
-.blueNav .navbar-default, .blueNav .navbar-header {
-  background-color: #2C82C9;
-}
-
 .blueNav .navbar-default .navbar-toggle .icon-bar, .blueNav .icon-bar {
   background-color: #ecf0f1;
 }
@@ -55,7 +47,7 @@ body {
   border-style: none;
 }
 
-.blueNav .navbar-default .navbar-toggle:focus, .blueNav .navbar-default .navbar-toggle:hover, .blueNav .navbar-collapse.collapse.in, .blueNav .navbar-collapse.collapsing {
+.blueNav .navbar-default, .blueNav .navbar-header, .blueNav .navbar-default .navbar-toggle:focus, .blueNav .navbar-default .navbar-toggle:hover, .blueNav .navbar-collapse.collapse.in, .blueNav .navbar-collapse.collapsing {
   background-color: #2C82C9;
 }
 
@@ -68,10 +60,6 @@ body {
   color: #ecf0f1;
 }
 
-.whiteNav .navbar-default, .whiteNav .navbar-header {
-  background-color: #ecf0f1;
-}
-
 .whiteNav .navbar-default .navbar-toggle .icon-bar, .whiteNav .icon-bar {
   background-color: #34495e;
 }
@@ -80,7 +68,7 @@ body {
   border-style: none;
 }
 
-.whiteNav .navbar-default .navbar-toggle:focus, .whiteNav .navbar-default .navbar-toggle:hover, .whiteNav .navbar-collapse.collapse.in, .whiteNav .navbar-collapse.collapsing {
+.whiteNav .navbar-default, .whiteNav .navbar-header, .whiteNav .navbar-default .navbar-toggle:focus, .whiteNav .navbar-default .navbar-toggle:hover, .whiteNav .navbar-collapse.collapse.in, .whiteNav .navbar-collapse.collapsing {
   background-color: #ecf0f1;
 }
 

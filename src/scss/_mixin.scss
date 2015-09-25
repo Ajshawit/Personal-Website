@@ -1,14 +1,11 @@
 @mixin navbarColors($mainColor,$altColor) {
-	.navbar-default, .navbar-header {
-		background-color: $mainColor;
-	}
 	.navbar-default .navbar-toggle .icon-bar, .icon-bar {
 		background-color: $altColor;
 	}
 	.navbar-default .navbar-toggle, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border-style: none;
 	}
-	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+	.navbar-default, .navbar-header, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
 		background-color: $mainColor;
 	}
 	.navbar-default .navbar-nav > li > a {
