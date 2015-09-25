@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 //NavBar
@@ -14,10 +16,10 @@ body {
 		}
 	}
 	.navbar-default {
-		background-color: $homeAndNav-bg-color;;
+		background-color: $green;;
 	}
 	.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
-		color: $homeAndNav-font-color;
+		color: $white;
 	}
 	.navbar-default .navbar-nav > .active > a {
 		border-style: solid;
@@ -31,28 +33,28 @@ body {
 
 @media screen and (max-width: 768px) {
 	.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-		background-color: $content-bg-color;		
+		background-color: $green;		
 	}
 	.navbar-default .navbar-nav > li > a, {
-		color: $alt-font-color;
+		color: $white;
 		text-align: right;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
-		background-color: $homeAndNav-font-color;
+		background-color: $white;
 	}
 	.navbar-default .navbar-toggle {
 		border-style: none;
 	}
 	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-		background-color: $homeAndNav-bg-color;
+		background-color: $green;
 	}
 }
 
 //Footer
 
 footer {
-	color: $footer-color;
-	background-color: $content-bg-color;
+	color: $grey;
+	background-color: $white;
 	padding-top: 50px;
 	padding-bottom: 10px;
 }

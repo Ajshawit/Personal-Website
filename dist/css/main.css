@@ -1,5 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #nav .navbar {
@@ -11,7 +13,7 @@ body {
 }
 
 #nav .navbar-default {
-  background-color: #40d47e;
+  background-color: #2CC990;
 }
 
 #nav .navbar-default .navbar-nav > li > a, #nav .navbar-default .navbar-brand {
@@ -26,10 +28,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-    background-color: #ecf0f1;
+    background-color: #2CC990;
   }
   .navbar-default .navbar-nav > li > a {
-    color: #34495e;
+    color: #ecf0f1;
     text-align: right;
   }
   .navbar-default .navbar-toggle .icon-bar {
@@ -39,7 +41,7 @@ body {
     border-style: none;
   }
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #40d47e;
+    background-color: #2CC990;
   }
 }
 
@@ -51,34 +53,67 @@ footer {
 }
 
 #home {
-  background-color: #40d47e;
+  background-color: #2CC990;
   color: #ecf0f1;
 }
 
-#home h1 {
-  font-size: 5em;
-  padding-top: 65px;
-  font-family: 'Press Start 2P', cursive;
+#home .jumbotron {
+  background-color: #2CC990;
+  color: #ecf0f1;
 }
 
-#home h2 {
-  font-size: 2.5em;
+#home .jumbotron h1 {
+  font-family: 'Press Start 2P', cursive;
+  padding-top: 65px;
+}
+
+#home .jumbotron h2 {
   padding-bottom: 50px;
 }
 
 #aboutMe {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #ecf0f1;
 }
 
-#aboutMe ul li {
-  height: 20px;
-  margin-bottom: 20px;
-  list-style-type: none;
+#aboutMe img {
+  width: 10em;
+  height: auto;
+  padding-top: 0px;
+  margin-left: auto;
+}
+
+#aboutMe h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#portfolio {
+  background-color: #2C82C9;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#portfolio img {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #ecf0f1;
+  border-width: 1px;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio h1 {
+  color: #ecf0f1;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5em;
+  padding-bottom: 20px;
 }
 
 #colSection {
-  background-color: #ecf0f1;
-  color: #34495e;
+  color: #ecf0f1;
 }
 
 #colSection p {
@@ -86,16 +121,21 @@ footer {
 }
 
 #colSection h1 {
-  margin-top: 0px;
   font-size: 1.5em;
 }
 
-#portfolio img {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #34495e;
-  border-width: 1px;
-  width: 350px;
-  height: 350px;
-  margin-top: 30px;
+.progress #red {
+  background-color: #FC6042;
+}
+
+.progress #orange {
+  background-color: #FCB941;
+}
+
+.progress #blue {
+  background-color: #2C82C9;
+}
+
+.progress #green {
+  background-color: #2CC990;
 }

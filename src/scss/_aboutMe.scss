@@ -1,10 +1,16 @@
 // About Me
 
 #aboutMe {
-	background-color: $content-bg-color;
-	ul li {
-		height: 20px;
-		margin-bottom: 20px;
-		list-style-type: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $white;
+	img {
+		width: 10em;
+		height: auto;
+		padding-top: 0px;
+		margin-left: auto;
+	}
+	h1 {
+		font-family: 'Press Start 2P', cursive;
 	}
 }
