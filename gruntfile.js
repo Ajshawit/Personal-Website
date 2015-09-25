@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		watch : {
 			css: {
-				files: ['src/scss/*.scss'],
-				tasks: ['sass:dev', 'browserSync:dev']
+				files: ['src/scss/*.scss', 'src/js/*.js'],
+				tasks: ['sass:dev', 'browserSync:dev', 'uglify:dev']
 			},
 		},
 		sass: {
@@ -34,17 +34,36 @@ module.exports = function(grunt) {
 		        options: {
 		        	watchTask: true,
 		            browser: "firefox",		            
-        }
-    }
-}
+		        }
+		    },
+		},
+		uglify: {
+		    dev: {
+		      	options: {
+		        	beautify: true
+		      	},
+		      	files: {
+		        	'dist/js/main.min.js': ['src/js/main.js']
+		     	 },
+    		},
+    		dist: {
+		      	options: {
+		        	mangle: true
+		      	},
+		      	files: {
+		        	'dist/js/main.min.js': ['src/js/main.js']
+		     	},
+    		}
+		}
 	});
 
 	//Load the plugins
 	grunt.loadNpmTasks ('grunt-contrib-watch' );
 	grunt.loadNpmTasks ('grunt-sass' );
 	grunt.loadNpmTasks ('grunt-browser-sync')
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	//Register task(s).
-	grunt.registerTask('default', ['sass:dev']);
-	grunt.registerTask('dist', ['sass:dist']);
+	grunt.registerTask('default', ['sass:dev','uglify:dev']);
+	grunt.registerTask('dist', ['sass:dist','uglify:dist']);
 };
