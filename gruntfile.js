@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		watch : {
 			css: {
 				files: ['src/scss/*.scss', 'src/js/*.js'],
-				tasks: ['sass:dev', 'browserSync:dev', 'uglify:dev']
+				tasks: ['sass:dev', 'uglify:dev']
 			},
 		},
 		sass: {
@@ -25,17 +25,6 @@ module.exports = function(grunt) {
 					'dist/css/main.css' : 'src/scss/main.scss'
 				}
 			},
-		},
-		browserSync: {
-		    dev: {
-		        bsFiles: {
-		            src : 'dist/css/style.css'
-		        },
-		        options: {
-		        	watchTask: true,
-		            browser: "firefox",		            
-		        }
-		    },
 		},
 		uglify: {
 		    dev: {
@@ -60,7 +49,6 @@ module.exports = function(grunt) {
 	//Load the plugins
 	grunt.loadNpmTasks ('grunt-contrib-watch' );
 	grunt.loadNpmTasks ('grunt-sass' );
-	grunt.loadNpmTasks ('grunt-browser-sync')
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	//Register task(s).
