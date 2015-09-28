@@ -21,11 +21,15 @@ $(window).scroll(function() {
 
     if (y_scroll_pos < aboutme.top) {
     	$("#nav").removeClass().addClass("greenNav");
+        $("#homeLink").removeClass().addClass("active");
+
     }
     else if (y_scroll_pos < portfolio.top) {
     	$("#nav").removeClass().addClass("whiteNav");
+        $("#aboutMeLink").removeClass().addClass("active");
     }	
 	else {
 		$("#nav").removeClass().addClass("blueNav");	
+        $("#portfolioLink").removeClass().addClass("active");
 	}
 });
