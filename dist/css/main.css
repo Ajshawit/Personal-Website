@@ -18,7 +18,7 @@ body {
   border-radius: 10px;
 }
 
-.greenNav .navbar-default .navbar-toggle .icon-bar, .greenNav .icon-bar {
+.greenNav .navbar-default .navbar-toggle .icon-bar, .greenNav .navbar-default .icon-bar {
   background-color: #ecf0f1;
 }
 
@@ -26,7 +26,7 @@ body {
   border-style: none;
 }
 
-.greenNav .navbar-default, .greenNav .navbar-header, .greenNav .navbar-default .navbar-toggle:focus, .greenNav .navbar-default .navbar-toggle:hover, .greenNav .navbar-collapse.collapse.in, .greenNav .navbar-collapse.collapsing {
+.greenNav .navbar-default .navbar-header, .greenNav .navbar-default .navbar-toggle:focus, .greenNav .navbar-default .navbar-toggle:hover, .greenNav .navbar-default .navbar-collapse.collapse.in, .greenNav .navbar-default .navbar-collapse.collapsing {
   background-color: #2CC990;
 }
 
@@ -44,7 +44,7 @@ body {
   background-color: #ecf0f1;
 }
 
-.blueNav .navbar-default .navbar-toggle .icon-bar, .blueNav .icon-bar {
+.blueNav .navbar-default .navbar-toggle .icon-bar, .blueNav .navbar-default .icon-bar {
   background-color: #ecf0f1;
 }
 
@@ -52,7 +52,7 @@ body {
   border-style: none;
 }
 
-.blueNav .navbar-default, .blueNav .navbar-header, .blueNav .navbar-default .navbar-toggle:focus, .blueNav .navbar-default .navbar-toggle:hover, .blueNav .navbar-collapse.collapse.in, .blueNav .navbar-collapse.collapsing {
+.blueNav .navbar-default .navbar-header, .blueNav .navbar-default .navbar-toggle:focus, .blueNav .navbar-default .navbar-toggle:hover, .blueNav .navbar-default .navbar-collapse.collapse.in, .blueNav .navbar-default .navbar-collapse.collapsing {
   background-color: #2C82C9;
 }
 
@@ -70,7 +70,7 @@ body {
   background-color: #ecf0f1;
 }
 
-.whiteNav .navbar-default .navbar-toggle .icon-bar, .whiteNav .icon-bar {
+.whiteNav .navbar-default .navbar-toggle .icon-bar, .whiteNav .navbar-default .icon-bar {
   background-color: #34495e;
 }
 
@@ -78,7 +78,7 @@ body {
   border-style: none;
 }
 
-.whiteNav .navbar-default, .whiteNav .navbar-header, .whiteNav .navbar-default .navbar-toggle:focus, .whiteNav .navbar-default .navbar-toggle:hover, .whiteNav .navbar-collapse.collapse.in, .whiteNav .navbar-collapse.collapsing {
+.whiteNav .navbar-default .navbar-header, .whiteNav .navbar-default .navbar-toggle:focus, .whiteNav .navbar-default .navbar-toggle:hover, .whiteNav .navbar-default .navbar-collapse.collapse.in, .whiteNav .navbar-default .navbar-collapse.collapsing {
   background-color: #ecf0f1;
 }
 
@@ -131,12 +131,24 @@ footer {
 #aboutMe img {
   width: 10em;
   height: auto;
-  padding-top: 0px;
+  padding-top: 10px;
   margin-left: auto;
+  float: right;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 #aboutMe h1 {
   font-family: 'Press Start 2P', cursive;
+  padding-bottom: 10px;
+}
+
+#aboutMe p {
+  padding-bottom: 10px;
+}
+
+#aboutMe h4 {
+  padding-top: 10px;
 }
 
 .progress #redProgress {
@@ -171,11 +183,31 @@ footer {
   height: auto;
 }
 
+@media screen and (max-width: 650px) {
+  #portfolio img {
+    width: 70%;
+    height: auto;
+  }
+}
+
 #portfolio h1 {
   color: #ecf0f1;
   font-family: 'Press Start 2P', cursive;
   font-size: 2.5em;
+  padding-bottom: 10px;
+}
+
+#portfolio h2 {
+  color: #ecf0f1;
+  font-family: 'Press Start 2P', cursive;
   padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 1.1em;
+}
+
+#portfolio p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #colSection {

@@ -1,23 +1,24 @@
 @mixin navbarColors($mainColor,$altColor) {
-	.navbar-default .navbar-toggle .icon-bar, .icon-bar {
-		background-color: $altColor;
-	}
-	.navbar-default .navbar-toggle, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		border-style: none;
-	}
-	.navbar-default, .navbar-header, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
-		background-color: $mainColor;
-	}
-	.navbar-default .navbar-nav > li > a {
-		color: $altColor;
-		text-align: right;
-	}
-	.navbar-default .navbar-brand,  {
-		color: $altColor;
-	}
-	.navbar-default .navbar-nav > .active > a {
-    	color: $mainColor;
-    	background-color: $altColor;
+	.navbar-default {
+		.navbar-toggle .icon-bar, .icon-bar {
+			background-color: $altColor;
+		}
+		.navbar-toggle, .navbar-collapse, .navbar-form {
+			border-style: none;
+		}
+		.navbar-header, .navbar-toggle:focus, .navbar-toggle:hover, .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+			background-color: $mainColor;
+		}
+		 .navbar-nav > li > a {
+			color: $altColor;
+			text-align: right;
+		}
+		.navbar-brand,  {
+			color: $altColor;
+		}
+		.navbar-nav > .active > a {
+	    	color: $mainColor;
+	    	background-color: $altColor
+		}
 	}
 }
-
