@@ -24,3 +24,34 @@ $(window).scroll(function() {
 	}
 });
 
+
+//Scroll function
+
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 500);
+  });
+}
+
+//Scroll to About Me
+
+$('#aboutMeLink').click(function (event) {
+  event.preventDefault();
+  $('#aboutMe').scrollView();
+});
+
+//Scroll to Portfolio
+
+$('#portfolioLink').click(function (event) {
+  event.preventDefault();
+  $('#portfolio').scrollView();
+});
+
+//Scroll to Home
+
+$('#homeLink').click(function (event) {
+  event.preventDefault();
+  $('#home').scrollView();
+});
