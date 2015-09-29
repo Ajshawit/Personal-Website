@@ -8,10 +8,9 @@
 		border-radius: 5px;
 		border-color: $white;
 		border-width: 1px;
-		width: 70%;
+		margin: 0 auto;
+		width: 95%;
 		height: auto;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	h1 {
 		color: $white;
@@ -28,17 +27,4 @@
 	h1 {
 		font-size: 1.5em;
 	}
-}
-
-.progress #redProgress {
-	background-color: $red;
-}
-.progress #orangeProgress {
-	background-color: $orange;
-}
-.progress #blueProgress {
-	background-color: $blue;
-}
-.progress #greenProgress {
-	background-color: $green;
 }

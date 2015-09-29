@@ -14,3 +14,16 @@
 		font-family: 'Press Start 2P', cursive;
 	}
 }
+
+.progress #redProgress {
+	background-color: $red;
+}
+.progress #orangeProgress {
+	background-color: $orange;
+}
+.progress #blueProgress {
+	background-color: $blue;
+}
+.progress #greenProgress {
+	background-color: $green;
+}
