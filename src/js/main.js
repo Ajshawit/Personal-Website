@@ -24,8 +24,9 @@ $(window).scroll(function() {
 	}
 });
 
-
+/////////////////
 //Scroll function
+/////////////////
 
 $.fn.scrollView = function () {
   return this.each(function () {
@@ -55,3 +56,16 @@ $('#homeLink').click(function (event) {
   event.preventDefault();
   $('#home').scrollView();
 });
+
+/////////////////
+//Remove col-xs-4 from portfolio section if window width gets smaller than 651px
+/////////////////
+$( window ).scroll(function(){
+    if ($(window).width() < 651) {
+        $(".portfolioCol").removeClass("col-xs-4");
+    }
+    else {
+        $(".portfolioCol").removeClass().addClass("portfolioCol col-md-4 col-xs-4")
+    }
+});
+
