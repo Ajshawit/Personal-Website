@@ -39,6 +39,11 @@ body {
   color: #ecf0f1;
 }
 
+.greenNav .navbar-default .navbar-nav > .active > a {
+  color: #2CC990;
+  background-color: #ecf0f1;
+}
+
 .blueNav .navbar-default .navbar-toggle .icon-bar, .blueNav .icon-bar {
   background-color: #ecf0f1;
 }
@@ -60,6 +65,11 @@ body {
   color: #ecf0f1;
 }
 
+.blueNav .navbar-default .navbar-nav > .active > a {
+  color: #2C82C9;
+  background-color: #ecf0f1;
+}
+
 .whiteNav .navbar-default .navbar-toggle .icon-bar, .whiteNav .icon-bar {
   background-color: #34495e;
 }
@@ -79,6 +89,11 @@ body {
 
 .whiteNav .navbar-default .navbar-brand {
   color: #34495e;
+}
+
+.whiteNav .navbar-default .navbar-nav > .active > a {
+  color: #ecf0f1;
+  background-color: #34495e;
 }
 
 footer {
