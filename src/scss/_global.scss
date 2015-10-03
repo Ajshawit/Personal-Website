@@ -1,9 +1,8 @@
 //Global
-
-body {
+html, body {
 	font-family: 'Open Sans', sans-serif;
-	overflow-y: scroll;
-	overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 //NavBar
@@ -24,23 +23,23 @@ body {
 
 //Nav Color Change id's
 
-.greenNav {
-	@include navbarColors($green,$white)
+.homeNav {
+	@include navbarColors($Color2,$Color1)
 }
 
-.blueNav {
-	@include navbarColors($blue,$white)
+.portfolioNav {
+	@include navbarColors($Color3,$Color1)
 }
 
-.whiteNav {
-	@include navbarColors($white,$black)
+.aboutMeNav {
+	@include navbarColors($Color1,$Color5)
 }
 
 //Footer
 
 footer {
-	color: $grey;
-	background-color: $white;
+	color: $Color3;
+	background-color: $Color1;
 	padding-top: 50px;
 	padding-bottom: 10px;
 }

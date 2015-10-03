@@ -12,65 +12,56 @@ html, body {
   border-width: 0px;
   border-radius: 10px; }
 
-.homeNav .navbar-default {
+.greenNav .navbar-default {
   background-color: #EE7469; }
-  .homeNav .navbar-default .navbar-toggle .icon-bar, .homeNav .navbar-default .icon-bar {
+  .greenNav .navbar-default .navbar-toggle .icon-bar, .greenNav .navbar-default .icon-bar {
     background-color: #FFF0D6; }
-  .homeNav .navbar-default .navbar-toggle, .homeNav .navbar-default .navbar-collapse, .homeNav .navbar-default .navbar-form {
+  .greenNav .navbar-default .navbar-toggle, .greenNav .navbar-default .navbar-collapse, .greenNav .navbar-default .navbar-form {
     border-style: none; }
-  .homeNav .navbar-default .navbar-header, .homeNav .navbar-default .navbar-toggle:focus, .homeNav .navbar-default .navbar-toggle:hover, .homeNav .navbar-default .navbar-collapse.collapse.in, .homeNav .navbar-default .navbar-collapse.collapsing {
+  .greenNav .navbar-default .navbar-header, .greenNav .navbar-default .navbar-toggle:focus, .greenNav .navbar-default .navbar-toggle:hover, .greenNav .navbar-default .navbar-collapse.collapse.in, .greenNav .navbar-default .navbar-collapse.collapsing {
     background-color: #EE7469; }
-  .homeNav .navbar-default .navbar-nav > li > a {
+  .greenNav .navbar-default .navbar-nav > li > a {
     color: #FFF0D6;
     text-align: right; }
-  .homeNav .navbar-default .navbar-brand {
-    color: #FFF0D6;
-    margin-left: 10px; }
-  .homeNav .navbar-default .navbar-nav > .active > a {
+  .greenNav .navbar-default .navbar-brand {
+    color: #FFF0D6; }
+  .greenNav .navbar-default .navbar-nav > .active > a {
     color: #EE7469;
     background-color: #FFF0D6; }
-  .homeNav .navbar-default .navbar-right {
-    margin-right: 10px; }
 
-.portfolioNav .navbar-default {
+.blueNav .navbar-default {
   background-color: #B8959B; }
-  .portfolioNav .navbar-default .navbar-toggle .icon-bar, .portfolioNav .navbar-default .icon-bar {
+  .blueNav .navbar-default .navbar-toggle .icon-bar, .blueNav .navbar-default .icon-bar {
     background-color: #FFF0D6; }
-  .portfolioNav .navbar-default .navbar-toggle, .portfolioNav .navbar-default .navbar-collapse, .portfolioNav .navbar-default .navbar-form {
+  .blueNav .navbar-default .navbar-toggle, .blueNav .navbar-default .navbar-collapse, .blueNav .navbar-default .navbar-form {
     border-style: none; }
-  .portfolioNav .navbar-default .navbar-header, .portfolioNav .navbar-default .navbar-toggle:focus, .portfolioNav .navbar-default .navbar-toggle:hover, .portfolioNav .navbar-default .navbar-collapse.collapse.in, .portfolioNav .navbar-default .navbar-collapse.collapsing {
+  .blueNav .navbar-default .navbar-header, .blueNav .navbar-default .navbar-toggle:focus, .blueNav .navbar-default .navbar-toggle:hover, .blueNav .navbar-default .navbar-collapse.collapse.in, .blueNav .navbar-default .navbar-collapse.collapsing {
     background-color: #B8959B; }
-  .portfolioNav .navbar-default .navbar-nav > li > a {
+  .blueNav .navbar-default .navbar-nav > li > a {
     color: #FFF0D6;
     text-align: right; }
-  .portfolioNav .navbar-default .navbar-brand {
-    color: #FFF0D6;
-    margin-left: 10px; }
-  .portfolioNav .navbar-default .navbar-nav > .active > a {
+  .blueNav .navbar-default .navbar-brand {
+    color: #FFF0D6; }
+  .blueNav .navbar-default .navbar-nav > .active > a {
     color: #B8959B;
     background-color: #FFF0D6; }
-  .portfolioNav .navbar-default .navbar-right {
-    margin-right: 10px; }
 
-.aboutMeNav .navbar-default {
+.whiteNav .navbar-default {
   background-color: #FFF0D6; }
-  .aboutMeNav .navbar-default .navbar-toggle .icon-bar, .aboutMeNav .navbar-default .icon-bar {
+  .whiteNav .navbar-default .navbar-toggle .icon-bar, .whiteNav .navbar-default .icon-bar {
     background-color: #383732; }
-  .aboutMeNav .navbar-default .navbar-toggle, .aboutMeNav .navbar-default .navbar-collapse, .aboutMeNav .navbar-default .navbar-form {
+  .whiteNav .navbar-default .navbar-toggle, .whiteNav .navbar-default .navbar-collapse, .whiteNav .navbar-default .navbar-form {
     border-style: none; }
-  .aboutMeNav .navbar-default .navbar-header, .aboutMeNav .navbar-default .navbar-toggle:focus, .aboutMeNav .navbar-default .navbar-toggle:hover, .aboutMeNav .navbar-default .navbar-collapse.collapse.in, .aboutMeNav .navbar-default .navbar-collapse.collapsing {
+  .whiteNav .navbar-default .navbar-header, .whiteNav .navbar-default .navbar-toggle:focus, .whiteNav .navbar-default .navbar-toggle:hover, .whiteNav .navbar-default .navbar-collapse.collapse.in, .whiteNav .navbar-default .navbar-collapse.collapsing {
     background-color: #FFF0D6; }
-  .aboutMeNav .navbar-default .navbar-nav > li > a {
+  .whiteNav .navbar-default .navbar-nav > li > a {
     color: #383732;
     text-align: right; }
-  .aboutMeNav .navbar-default .navbar-brand {
-    color: #383732;
-    margin-left: 10px; }
-  .aboutMeNav .navbar-default .navbar-nav > .active > a {
+  .whiteNav .navbar-default .navbar-brand {
+    color: #383732; }
+  .whiteNav .navbar-default .navbar-nav > .active > a {
     color: #FFF0D6;
     background-color: #383732; }
-  .aboutMeNav .navbar-default .navbar-right {
-    margin-right: 10px; }
 
 footer {
   color: #B8959B;
@@ -93,8 +84,7 @@ footer {
 #aboutMe {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #FFF0D6;
-  color: #383732; }
+  background-color: #FFF0D6; }
   #aboutMe img {
     width: 10em;
     height: auto;
@@ -112,16 +102,16 @@ footer {
     padding-top: 10px; }
 
 .progress #progressHTML {
-  background-color: #EE7469; }
+  background-color: #FC6042; }
 
 .progress #progressCSS {
-  background-color: #B8959B; }
+  background-color: #2CC990; }
 
 .progress #progressjQuery {
-  background-color: #836D6F; }
+  background-color: #FCB941; }
 
 .progress #progressBootstrap {
-  background-color: #383732; }
+  background-color: #2C82C9; }
 
 #portfolio {
   background-color: #B8959B;
@@ -154,7 +144,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px; }
   #portfolio a {
-    color: #FFF0D6;
+    color: #ffffff;
     text-decoration: underline; }
 
 #colSection {

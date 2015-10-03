@@ -3,7 +3,8 @@
 #aboutMe {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: $white;
+	background-color: $Color1;
+	color: $Color5;
 	img {
 		width: 10em;
 		height: auto;
@@ -25,15 +26,15 @@
 	}
 }
 
-.progress #redProgress {
-	background-color: $red;
+.progress #progressHTML {
+	background-color: $Color2;
 }
-.progress #orangeProgress {
-	background-color: $orange;
+.progress #progressCSS {
+	background-color: $Color3;
 }
-.progress #blueProgress {
-	background-color: $blue;
+.progress #progressjQuery {
+	background-color: $Color4;
 }
-.progress #greenProgress {
-	background-color: $green;
+.progress #progressBootstrap {
+	background-color: $Color5;
 }

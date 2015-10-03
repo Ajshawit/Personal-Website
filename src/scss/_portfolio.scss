@@ -1,13 +1,12 @@
 //Portfolio
 #portfolio {
-	background-color: $blue;
+	background-color: $Color3;
 	padding-top: 30px;
 	padding-bottom: 50px;
-
 	img {
 		border-style: solid;
 		border-radius: 5px;
-		border-color: $white;
+		border-color: $Color1;
 		border-width: 1px;
 		margin: 0 auto;
 		width: 95%;
@@ -20,13 +19,13 @@
 		}
 	}
 	h1 {
-		color: $white;
+		color: $Color1;
 		font-family: 'Press Start 2P', cursive;
 		font-size: 2.5em;
 		padding-bottom: 10px;	
 	}
 	h2 {
-		color: $white;
+		color: $Color1;
 		font-family: 'Press Start 2P', cursive;
 		padding-bottom: 20px;
 		padding-top: 10px;
@@ -37,9 +36,13 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	a {
+		color: $Color1;
+		text-decoration: underline;
+	}
 }
 #colSection {
-	color: $white;
+	color: $Color1;
 	p {
 		margin-top: 20px
 	}

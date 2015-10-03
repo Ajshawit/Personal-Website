@@ -1,5 +1,6 @@
 @mixin navbarColors($mainColor,$altColor) {
 	.navbar-default {
+		background-color: $mainColor;
 		.navbar-toggle .icon-bar, .icon-bar {
 			background-color: $altColor;
 		}
@@ -15,10 +16,14 @@
 		}
 		.navbar-brand,  {
 			color: $altColor;
+			margin-left: 10px;
 		}
 		.navbar-nav > .active > a {
 	    	color: $mainColor;
 	    	background-color: $altColor
+		}
+		.navbar-right {
+			margin-right: 10px;
 		}
 	}
 }
