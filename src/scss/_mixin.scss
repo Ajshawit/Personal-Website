@@ -2,24 +2,36 @@
 	.navbar-default {
 		background-color: $mainColor;
 		.navbar-toggle .icon-bar, .icon-bar {
-			background-color: $altColor;
+			@include transition-property(background-color);
+  			@include transition-duration(1s);
+  			background-color: $altColor;
 		}
 		.navbar-toggle, .navbar-collapse, .navbar-form {
 			border-style: none;
 		}
 		.navbar-header, .navbar-toggle:focus, .navbar-toggle:hover, .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+			@include transition-property(background-color);
+  			@include transition-duration(0.5s);
 			background-color: $mainColor;
 		}
 		 .navbar-nav > li > a {
+			@include transition-property(color);
+  			@include transition-duration(0.5s);
 			color: $altColor;
 			text-align: right;
 		}
 		.navbar-brand,  {
+			@include transition-property(color);
+  			@include transition-duration(0.5s);
 			color: $altColor;
 			margin-left: 10px;
 		}
 		.navbar-nav > .active > a {
+	    	@include transition-property(color);
+  			@include transition-duration(0.5s);
 	    	color: $mainColor;
+	    	@include transition-property(background-color);
+  			@include transition-duration(0.5s);
 	    	background-color: $altColor
 		}
 		.navbar-right {
