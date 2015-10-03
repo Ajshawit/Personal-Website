@@ -15,67 +15,19 @@ html, body {
 .homeNav .navbar-default {
   background-color: #EE7469; }
   .homeNav .navbar-default .navbar-toggle .icon-bar, .homeNav .navbar-default .icon-bar {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
     background-color: #FFF0D6; }
   .homeNav .navbar-default .navbar-toggle, .homeNav .navbar-default .navbar-collapse, .homeNav .navbar-default .navbar-form {
     border-style: none; }
   .homeNav .navbar-default .navbar-header, .homeNav .navbar-default .navbar-toggle:focus, .homeNav .navbar-default .navbar-toggle:hover, .homeNav .navbar-default .navbar-collapse.collapse.in, .homeNav .navbar-default .navbar-collapse.collapsing {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #EE7469; }
   .homeNav .navbar-default .navbar-nav > li > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #FFF0D6;
     text-align: right; }
   .homeNav .navbar-default .navbar-brand {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #FFF0D6;
     margin-left: 10px; }
   .homeNav .navbar-default .navbar-nav > .active > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #EE7469;
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #FFF0D6; }
   .homeNav .navbar-default .navbar-right {
     margin-right: 10px; }
@@ -83,67 +35,19 @@ html, body {
 .portfolioNav .navbar-default {
   background-color: #B8959B; }
   .portfolioNav .navbar-default .navbar-toggle .icon-bar, .portfolioNav .navbar-default .icon-bar {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
     background-color: #FFF0D6; }
   .portfolioNav .navbar-default .navbar-toggle, .portfolioNav .navbar-default .navbar-collapse, .portfolioNav .navbar-default .navbar-form {
     border-style: none; }
   .portfolioNav .navbar-default .navbar-header, .portfolioNav .navbar-default .navbar-toggle:focus, .portfolioNav .navbar-default .navbar-toggle:hover, .portfolioNav .navbar-default .navbar-collapse.collapse.in, .portfolioNav .navbar-default .navbar-collapse.collapsing {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #B8959B; }
   .portfolioNav .navbar-default .navbar-nav > li > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #FFF0D6;
     text-align: right; }
   .portfolioNav .navbar-default .navbar-brand {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #FFF0D6;
     margin-left: 10px; }
   .portfolioNav .navbar-default .navbar-nav > .active > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #B8959B;
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #FFF0D6; }
   .portfolioNav .navbar-default .navbar-right {
     margin-right: 10px; }
@@ -151,67 +55,19 @@ html, body {
 .aboutMeNav .navbar-default {
   background-color: #FFF0D6; }
   .aboutMeNav .navbar-default .navbar-toggle .icon-bar, .aboutMeNav .navbar-default .icon-bar {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
     background-color: #383732; }
   .aboutMeNav .navbar-default .navbar-toggle, .aboutMeNav .navbar-default .navbar-collapse, .aboutMeNav .navbar-default .navbar-form {
     border-style: none; }
   .aboutMeNav .navbar-default .navbar-header, .aboutMeNav .navbar-default .navbar-toggle:focus, .aboutMeNav .navbar-default .navbar-toggle:hover, .aboutMeNav .navbar-default .navbar-collapse.collapse.in, .aboutMeNav .navbar-default .navbar-collapse.collapsing {
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #FFF0D6; }
   .aboutMeNav .navbar-default .navbar-nav > li > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #383732;
     text-align: right; }
   .aboutMeNav .navbar-default .navbar-brand {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #383732;
     margin-left: 10px; }
   .aboutMeNav .navbar-default .navbar-nav > .active > a {
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     color: #FFF0D6;
-    -moz-transition-property: background-color;
-    -o-transition-property: background-color;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
     background-color: #383732; }
   .aboutMeNav .navbar-default .navbar-right {
     margin-right: 10px; }
