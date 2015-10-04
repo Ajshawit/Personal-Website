@@ -1,25 +1,50 @@
+/////////////////
+//Nav color change based on scroll position
+/////////////////
+
 $(window).scroll(function() {
-    var y_scroll_pos = $(document).scrollTop() + 45;
-    var aboutme = $( "#aboutMe" ).position();
-    var portfolio = $( "#portfolio" ).position();
-	// set to whatever you want it to be
+  var y_scroll_pos = $(document).scrollTop() + 45;
+  var aboutme = $( "#aboutMe" ).position();
+  var portfolio = $( "#portfolio" ).position();
+  if (y_scroll_pos < aboutme.top) {
+  	$("#nav").removeClass().addClass("homeNav");
+      $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
+      $("#homeLink").addClass("active");
 
-    if (y_scroll_pos < aboutme.top) {
-    	$("#nav").removeClass().addClass("homeNav");
-        $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
-        $("#homeLink").addClass("active");
-
-    }
-    else if (y_scroll_pos < portfolio.top) {
-    	$("#nav").removeClass().addClass("aboutMeNav");
-        $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
-        $("#aboutMeLink").addClass("active");
-    }	
-	else {
-		$("#nav").removeClass().addClass("portfolioNav");
-        $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
-        $("#portfolioLink").addClass("active");
+  }
+  else if (y_scroll_pos < portfolio.top) {
+  	$("#nav").removeClass().addClass("aboutMeNav");
+      $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
+      $("#aboutMeLink").addClass("active");
+  }	
+  else {
+    $("#nav").removeClass().addClass("portfolioNav");
+      $("#aboutMeLink, #homeLink, #portfolioLink").removeClass();
+      $("#portfolioLink").addClass("active");
 	}
+});
+
+/////////////////
+//Fade based on Scroll position
+//From: http://stackoverflow.com/questions/9097501/show-div-when-scroll-position
+/////////////////
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(){           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){               
+                $(this).animate({'opacity':'1'},500);               
+            }        
+        });  
+    });
 });
 
 /////////////////
@@ -58,6 +83,7 @@ $('#homeLink').click(function (event) {
 /////////////////
 //Remove col-xs-4 from portfolio section if window width gets smaller than 651px
 /////////////////
+
 $( window ).scroll(function(){
     if ($(window).width() < 651) {
         $(".portfolioCol").removeClass("col-xs-4");
@@ -67,3 +93,31 @@ $( window ).scroll(function(){
     }
 });
 
+/////////////////
+//Modify height of section based on height of window
+/////////////////
+var mainWindowHeight = $( window ).height();
+
+var jumbotronHeight = $(".jumbotron").height();
+var homeWindowPadding = (mainWindowHeight - jumbotronHeight) / 2 - 45;
+
+var aboutMeHeight = $("#aboutMeContent").height();
+var aboutMeWindowPadding = (mainWindowHeight - aboutMeHeight) / 2 - 45;
+
+var portfolioHeight = $("#portfolioContent").height();
+var portfolioWindowPadding = (mainWindowHeight - portfolioHeight) / 2 - 45;
+
+$(document).ready(function(){
+  
+  //Home Height Set
+  $("#home").css("min-height",mainWindowHeight);
+  $(".jumbotron").css("padding-top",homeWindowPadding);
+  
+  //About Me Height Set
+  $("#aboutMe").css("min-height",mainWindowHeight);
+  $("#aboutMeContent").css("padding-top",aboutMeWindowPadding);
+
+  //Portfolio Height Set
+  $("#portfolio").css("min-height",mainWindowHeight);
+  $("#portfolioContent").css("padding-top",portfolioWindowPadding);
+});
