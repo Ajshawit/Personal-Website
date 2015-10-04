@@ -1,8 +1,7 @@
 // About Me
 
 #aboutMe {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	@include clearfix;
 	background-color: $Color1;
 	color: $Color5;
 	img {
