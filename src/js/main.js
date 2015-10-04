@@ -96,7 +96,8 @@ $( window ).scroll(function(){
 /////////////////
 //Modify height of section based on height of window
 /////////////////
-$(document).ready(function(){
+
+$(window).on("resize",function(){
 
 var mainWindowHeight = $( window ).height();
 
@@ -109,16 +110,35 @@ var aboutMeWindowPadding = (mainWindowHeight - aboutMeHeight) / 2 - 45;
 var portfolioHeight = $("#portfolioContent").height();
 var portfolioWindowPadding = (mainWindowHeight - portfolioHeight) / 2 - 45;
 
+
+
 //Home Height Set
 $("#home").css("min-height",mainWindowHeight);
-$(".jumbotron").css("padding-top",homeWindowPadding);
+if (homeWindowPadding > 50) {
+  $("#homeContent").css("padding-top",homeWindowPadding);
+}
+else {
+  $("#homeContent").css({"padding-top":"50px", "padding-bottom":"50px"});
+}
+
 
 //About Me Height Set
 $("#aboutMe").css("min-height",mainWindowHeight);
-$("#aboutMeContent").css("padding-top",aboutMeWindowPadding);
+if (aboutMeWindowPadding > 50) {
+  $("#aboutMeContent").css("padding-top",aboutMeWindowPadding);
+}
+else {
+  $("#aboutMeContent").css({"padding-top":"50px", "padding-bottom":"50px"});
+}
+
 
 //Portfolio Height Set
 $("#portfolio").css("min-height",mainWindowHeight);
-$("#portfolioContent").css("padding-top",portfolioWindowPadding);
+if (portfolioWindowPadding > 50) {
+  $("#portfolioContent").css("padding-top",portfolioWindowPadding);
+}
+else {
+  $("#portfolioContent").css({"padding-top":"50px", "padding-bottom":"50px"});
+}
 
-});
+}).resize();
