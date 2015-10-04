@@ -3,6 +3,13 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
+    @include sticky-footer(54px);
+    #footer {
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    	background-color: $Color3;
+    	color: $Color1;
+    }
 }
 
 //NavBar
@@ -33,15 +40,6 @@ html, body {
 
 .aboutMeNav {
 	@include navbarColors($Color1,$Color5)
-}
-
-//Footer
-
-footer {
-	color: $Color3;
-	background-color: $Color1;
-	padding-top: 50px;
-	padding-bottom: 10px;
 }
 
 //Hide me
