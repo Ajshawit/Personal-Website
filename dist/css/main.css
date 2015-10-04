@@ -2,6 +2,25 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   max-width: 100%;
   overflow-x: hidden; }
+  html html, html body, body html, body body {
+    height: 100%; }
+  html #root, body #root {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -54px; }
+    html #root #root_footer, body #root #root_footer {
+      height: 54px; }
+  html #footer, body #footer {
+    clear: both;
+    position: relative;
+    height: 54px; }
+  html #footer, body #footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #B8959B;
+    color: #FFF0D6; }
 
 #nav .navbar {
   border: none; }
@@ -72,12 +91,6 @@ html, body {
   .aboutMeNav .navbar-default .navbar-right {
     margin-right: 10px; }
 
-footer {
-  color: #B8959B;
-  background-color: #FFF0D6;
-  padding-top: 50px;
-  padding-bottom: 10px; }
-
 .hideme {
   opacity: 0; }
 
@@ -91,8 +104,8 @@ footer {
       font-family: 'Press Start 2P', cursive; }
 
 #aboutMe {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  overflow: hidden;
+  *zoom: 1;
   background-color: #FFF0D6;
   color: #383732; }
   #aboutMe img {
