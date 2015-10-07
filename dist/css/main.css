@@ -1,21 +1,15 @@
+body, html {
+  font-family: "Roboto", sans-serif; }
+  body h1, html h1 {
+    font-family: "Press Start 2P", cursive; }
+  body h4, html h4 {
+    font-family: "Roboto Condensed", sans-serif; }
+  body .navbar-brand, html .navbar-brand {
+    font-family: "Roboto Condensed", sans-serif; }
+
 html, body {
-  font-family: 'Open Sans', sans-serif;
   max-width: 100%;
   overflow-x: hidden; }
-  html html, html body, body html, body body {
-    height: 100%; }
-  html #root, body #root {
-    clear: both;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin-bottom: -54px; }
-    html #root #root_footer, body #root #root_footer {
-      height: 54px; }
-  html #footer, body #footer {
-    clear: both;
-    position: relative;
-    height: 54px; }
   html #footer, body #footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -91,23 +85,43 @@ html, body {
   .aboutMeNav .navbar-default .navbar-right {
     margin-right: 10px; }
 
+.contactMeNav .navbar-default {
+  background-color: #FFF0D6; }
+  .contactMeNav .navbar-default .navbar-toggle .icon-bar, .contactMeNav .navbar-default .icon-bar {
+    background-color: #383732; }
+  .contactMeNav .navbar-default .navbar-toggle, .contactMeNav .navbar-default .navbar-collapse, .contactMeNav .navbar-default .navbar-form {
+    border-style: none; }
+  .contactMeNav .navbar-default .navbar-header, .contactMeNav .navbar-default .navbar-toggle:focus, .contactMeNav .navbar-default .navbar-toggle:hover, .contactMeNav .navbar-default .navbar-collapse.collapse.in, .contactMeNav .navbar-default .navbar-collapse.collapsing {
+    background-color: #FFF0D6; }
+  .contactMeNav .navbar-default .navbar-nav > li > a {
+    color: #383732;
+    text-align: right; }
+  .contactMeNav .navbar-default .navbar-brand {
+    color: #383732;
+    margin-left: 10px; }
+  .contactMeNav .navbar-default .navbar-nav > .active > a {
+    color: #FFF0D6;
+    background-color: #383732; }
+  .contactMeNav .navbar-default .navbar-right {
+    margin-right: 10px; }
+
 .hideme {
   opacity: 0; }
 
 #home {
   background-color: #EE7469;
-  color: #FFF0D6; }
+  color: #FFF0D6;
+  min-height: 100vh;
+  padding-top: 35vh; }
   #home .jumbotron {
     background-color: #EE7469;
     color: #FFF0D6; }
-    #home .jumbotron h1 {
-      font-family: 'Press Start 2P', cursive; }
 
 #aboutMe {
-  overflow: hidden;
-  *zoom: 1;
   background-color: #FFF0D6;
-  color: #383732; }
+  color: #383732;
+  min-height: 100vh;
+  padding-top: 20vh; }
   #aboutMe img {
     width: 10em;
     height: auto;
@@ -117,7 +131,6 @@ html, body {
     padding-left: 10px;
     padding-bottom: 10px; }
   #aboutMe h1 {
-    font-family: 'Press Start 2P', cursive;
     padding-bottom: 10px; }
   #aboutMe p {
     padding-bottom: 10px; }
@@ -138,8 +151,8 @@ html, body {
 
 #portfolio {
   background-color: #B8959B;
-  padding-top: 30px;
-  padding-bottom: 50px; }
+  min-height: 100vh;
+  padding-top: 20vh; }
   #portfolio img {
     border-style: solid;
     border-radius: 5px;
@@ -154,12 +167,10 @@ html, body {
       height: auto; } }
   #portfolio h1 {
     color: #FFF0D6;
-    font-family: 'Press Start 2P', cursive;
     font-size: 2.5em;
     padding-bottom: 10px; }
   #portfolio h2 {
     color: #FFF0D6;
-    font-family: 'Press Start 2P', cursive;
     padding-bottom: 20px;
     padding-top: 10px;
     font-size: 1.1em; }
@@ -176,3 +187,13 @@ html, body {
     margin-top: 20px; }
   #colSection h1 {
     font-size: 1.5em; }
+
+#contactMe {
+  background-color: #FFF0D6;
+  color: #383732;
+  min-height: 100vh;
+  padding-top: 25vh; }
+  #contactMe h1 {
+    padding-bottom: 10px; }
+  #contactMe h4 {
+    padding-top: 10px; }
